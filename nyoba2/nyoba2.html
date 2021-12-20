@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/nyoba.css">
+    <link rel="stylesheet" href="./css/account.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/document.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/facilityrate.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="./css/pagination.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    
+
+	<title>Bali Data Center</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-home'></i>
+			<span class="text">Bali Data Center</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>          
+			</li>
+
+			<li>
+			    <a href="#">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Division</span>
+				</a> 
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+            
+			
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			
+			
+			<div class="action">
+                <div class="profile" onclick="menuToggle();">
+                    <img src="./img/photoprofil2.png">
+                </div>
+    
+                <div class="menu">
+                    <h3>
+                        Ferdy
+                        <div>
+                            Programmer
+                        </div>
+                    </h3>
+                    <ul>
+                        <li>
+                            <span class="material-icons icons-size">person</span>
+                            <a href="#">My Profile</a>
+                        </li>
+                        <li>
+                            <span class="material-icons icons-size">mode</span>
+                            <a href="#">Edit Account</a>
+                        </li>
+                        <li>
+                            <span class="material-icons icons-size">insert_comment</span>
+                            <a href="#">Log out</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+    
+                
+            
+
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">home</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+
+            <div class="head-bar">
+                <li>
+					<span class="text">
+						<h2>Selamat Datang, FERDY!</h2>
+						<p>Portal Data Bali Dewata</p>
+                        <form action="#">
+                            <div class="form-input">
+                                <input type="search" placeholder="Bali Data Center">
+                              
+                            </div>
+                        </form>
+					</span>
+                </li>
+                <div class="main-pic">
+                    <img src="./img/pura.png">
+                </div>
+
+                
+            </div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>204</h3>
+						<p>Input Data</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>48</h3>
+						<p>User visit</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-home' ></i>
+					<span class="text">
+						<h3>48%</h3>
+						<p>Work Target</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>One Data Policy</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Aspek</th>
+								<th>Input Data</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/forest.png">
+									<p>Fisik dan Lingkungan</p>
+								</td>
+								<td>20-11-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/economic.png">
+									<p>Ekonomi Wilayah</p>
+								</td>
+								<td>21-11-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/man.png">
+									<p>Sosial penduduk dan Kesehatan</p>
+								</td>
+								<td>20-11-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/office-building.png">
+									<p>Infrastruktur dan Transportasi</p>
+								</td>
+								<td>21-11-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/data-science.png">
+									<p>Kelembagaan</p>
+								</td>
+								<td>20-11-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Time/Date</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+                    <!--digital clock-->
+                    <div onload="initClock()">
+                        <div class="datetime">
+                            <div class="time">
+                              <span id="hour">00</span>:
+                              <span id="minutes">00</span>
+                              <span id="period">AM</span>
+                            </div>
+                          </div>
+                    </div>
+                    <!--calendar-->
+                    <div class="light">
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <span class="month-picker" id="month-picker">February</span>
+                                <div class="year-picker">
+                                    <span class="year-change" id="prev-year">
+                                        <pre><</pre>
+                                    </span>
+                                    <span id="year">2021</span>
+                                    <span class="year-change" id="next-year">
+                                        <pre>></pre>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-week-day">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="calendar-days"></div>
+                            </div>
+                            <div class="calendar-footer">
+                                
+                            </div>
+                            <div class="month-list"></div>
+                        </div>
+                    
+                        
+                    </div>
+					
+				</div>
+                
+			</div>
+
+
+
+            <!--heatlh-->
+            <div class="head-bar">
+                <li>
+					<span class="text">
+						<h2>Department of Health Public</h2>
+						<p>Portal Data Kesehatan Publik Provinsi Bali </p>
+                        <form action="#">
+                            <div class="form-input">
+                                <input type="search" placeholder="Bali Data Center">
+                              
+                            </div>
+                        </form>
+					</span>
+                </li>
+                <div class="main-pic">
+                    <img src="./img/hospital.png">
+                </div>
+
+                
+            </div>
+
+
+
+            <!--create content number case and google maps api-->
+            <div class="content-top">
+                <div class="covid-case">
+                        <ul>
+                        <li>
+                            <h3>104</h3>
+                            <p>kasus aktif Covid-19</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <h4>RS Rujukan</h4>
+                        </li>
+                        </ul>
+
+                        <div id="clickmap1">
+                            <p>RSUP Sanglah Denpasar</p>
+                        </div>
+                        <div id="clickmap2">
+                            <p>RSUD Wangaya</p>
+                        </div>
+                        <div id="clickmap3">
+                            <p>RSUD Mangusada</p>
+                        </div>
+                        <div id="clickmap4">
+                            <p>RSUD Bali Mandara</p>
+                        </div>
+                        <div id="clickmap5">
+                            <p>RSU Udayana</p>
+                        </div>
+                        <div id="clickmap6">
+                            <p>RSU Negara</p>
+                        </div>        
+                    
+                </div>
+
+                <div class="isolate">
+                    <h2>Sebaran Rumah Sakit Rujukan Covid-19 se-Bali</h2>
+                    <div class="map" id="map">
+
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="content-middle">
+                <div class="facility-rate">
+                    <h3>
+                        Ketersediaan komponen fasilitas kesehatan
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="bar">
+                          <div class="info">
+                            <span>Dokter</span>
+                          </div>
+                          <div class="progress-line doctor">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>Tenaga Medis</span>
+                          </div>
+                          <div class="progress-line medical-worker">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>Rumah sakit</span>
+                          </div>
+                          <div class="progress-line hospital">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>Ambulans</span>
+                          </div>
+                          <div class="progress-line transport">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>UGD</span>
+                          </div>
+                          <div class="progress-line ugd">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="rs-rujukan">
+                    <h4>peta persebaran tempat isolasi mandiri</h4>
+                    
+                </div>
+            </div>
+
+            <!--create the area of isolation place-->
+            <div class="content-middle-2">
+                <div class="order">
+					<div class="head">
+						<h3>Daftar Tempat Isolasi Mandiri</h3>
+						
+						
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Nama Tempat</th>
+								<th>No.Telfon</th>
+								<th>Alamat</th>
+                                <th>Keterangan</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="./img/hospital.png">
+									<p>RSU Garbamed</p>
+								</td>
+								<td>081236796001</td>
+								<td>Jl. Raya Kerobokan No. 53 Badung</td>
+                                <td><span class="status completed">Isoman</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./img/hospital.png">
+									<p>Bakung Beach Resort</p>
+								</td>
+								<td>(0361) 753941</td>
+								<td>Jalan Kartika Plaza, Gang Samudra, Tuban, Kuta, Kabupaten Badung, Bali 80361</td>
+                                <td><span class="status completed">Isoman</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./img/hospital.png">
+									<p>Gedung Diklat RSJ Bali</p>
+								</td>
+								<td>(0366) 91073</td>
+								<td>Jl. Kesumayudha No.29, Kawan, Kec. Bangli, Kabupaten Bangli, Bali 80661</td>
+                                <td><span class="status pending">Isoter</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./img/hospital.png">
+									<p>Hotel Evitel</p>
+								</td>
+								<td>(0361) 9080168</td>
+								<td> Jl. Monkey Forest, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</td>
+                                <td><span class="status pending">Isoter</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./img/hospital.png">
+									<p>Hotel Ibis Kuta</p>
+								</td>
+								<td>(0361) 756500</td>
+								<td>Jl. Raya Kuta No.77, Kuta, Kabupaten Badung</td>
+                                <td><span class="status completed">Isoman</span></td>
+							</tr>
+                            
+						</tbody>
+					</table>
+				</div>
+
+            </div>
+
+
+            <div class="head-bar">
+                <li>
+                  <span class="text">
+                    <h2>Department of Economy</h2>
+                    <p>Portal Data Ekonomi Provinsi Bali </p>
+                    <form action="#">
+                      <div class="form-input">
+                          <input type="search" placeholder="Bali Data Center">
+                        
+                      </div>
+                    </form>             
+                  </span>
+                </li>
+                <div class="main-pic">
+                  <img src="./img/office-building.png">
+                </div>
+              </div>
+
+
+           
+
+        
+              
+              <div class="container ">
+                  <!-- Table structure here -->
+                  <div class="order">
+                    <table  id="our-table">
+                      <thead>
+                          <tr>
+                              <th>Strategi Pembangunan</th>
+                              <th>Instansi Penanggung Jawab</th>
+                              <th>Kuartal </th>
+                              
+                          </tr>
+                      </thead>
+                      <tbody id="table-body">
+              
+                      </tbody>
+                  </table>
+        
+                  </div>
+                  
+              </div>
+              
+              <div class="container ">
+                  <div id="pagination-wrapper"></div>
+              </div>
+
+
+
+           
+
+            
+
+
+         
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+    <script src="hospitalmap.js"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="pagination.js"></script>
+    
+    
+    
+</body>
+</html>
